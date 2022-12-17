@@ -44,9 +44,9 @@ public class Main{
         
         System.out.println();
         
-        spv.addLessontoStudent(ogr1, ugc);
-        spv.addLessontoStudent(ogr2, ugc);
-        spv.addLessontoStudent(ogr3, ugc);
+        //spv.addLessontoStudent(ogr1, ugc);
+        //spv.addLessontoStudent(ogr2, ugc);
+        //spv.addLessontoStudent(ogr3, ugc);
         System.out.println(ugc.course_code + " " + ugc.course_name + " "+ ugc.credit);
         System.out.println(); 
         System.out.println();
