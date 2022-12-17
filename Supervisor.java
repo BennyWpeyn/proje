@@ -32,9 +32,10 @@ public class Supervisor extends Lecturer {
         course.students_id.add(student.id_number);
         course.numStudents++;
         System.out.println("Successfully added");
+    }
 
-List<Student> list_UnderGraduate = new ArrayList<>();
-List<Student> list_Graduate = new ArrayList<>();
+    List<Student> list_UnderGraduate = new ArrayList<>();
+    List<Student> list_Graduate = new ArrayList<>();
 
     public void addUnderStudent(){
         System.out.print("id:");
