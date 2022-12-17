@@ -15,4 +15,7 @@ public abstract class Student {
         this.year = year;
         listOfCourses = new Course[50];
     }
+
+
+
 }

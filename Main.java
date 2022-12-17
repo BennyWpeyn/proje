@@ -1,10 +1,16 @@
+import java.util.Scanner;
+
 public class Main{
+
     public static void main(String[] args){
         // örnek öğrenciler
-        UndergraduateS ogr1 = new UndergraduateS(100, "osman gültekin", 2011);
         UndergraduateS ogr2 = new UndergraduateS(200, "osmane gültekin", 2011);
         UndergraduateS ogr3 = new UndergraduateS(300, "osmano gültekin", 2011);
         
+        
+        Scanner sc2=new Scanner(System.in);
+
+        UndergraduateS ogr1 = new UndergraduateS(1, "osman gültekin", 2011);
         System.out.println(ogr1.id_number);
         
         //örnek dersler
@@ -44,6 +50,18 @@ public class Main{
         System.out.println();
         System.out.println("Studendts id numbers : " +ugc.students_id);
        
+
+Supervisor sv=new Supervisor(125,"Nilsu Aksu");
+
+    sv.addUnderStudent();
+    sv.addGraduateStudent();
+
+
+
+
+
+
+
 
 
 
