@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class GraduateC extends Course {
     Classrooms classroom;
 
@@ -6,6 +8,7 @@ public class GraduateC extends Course {
         this.course_code = course_code;
         this.course_name = course_name;
         this.credit = credit;
+        students_id = new ArrayList<>();
     }
 
 
