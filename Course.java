@@ -1,15 +1,14 @@
+import java.util.ArrayList;
+
 public abstract class Course {
     String course_code;
     String course_name;
     int credit;
-    Areas courseLocation;  // classroom
+    
+    Classrooms courseLocation;  // classroom
     Lecturer lecturerOfCourse;
-    Student[] students;
-    int population;
-
-
-    
-    
+    ArrayList<Integer> students_id;
+    int numStudents; // number of the students 
 
 
 

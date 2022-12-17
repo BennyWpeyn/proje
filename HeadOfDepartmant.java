@@ -4,6 +4,17 @@ public class HeadOfDepartmant extends Lecturer {
         super(id_number, name_surname);
     }
 
+
+
+
+
+
+
+
     
-    
+
+
+
 }
+    
+
