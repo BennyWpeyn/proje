@@ -13,10 +13,6 @@ public class Supervisor extends Lecturer {
 
 
 
-
-
-
-
     // adding courses to the student
     public void addLessontoStudent(Student student, Course course){
         if(student.getClass().getName() == "UndergraduateS" && course.getClass().getName() == "GraduateC"){
@@ -66,7 +62,7 @@ List<Student> list_Graduate = new ArrayList<>();
     
         UndergraduateS us=new UndergraduateS(id, name,yearr );
         // i did the masterStudent before it , it was graduateS
-        GraduateS gs=new MasterStudent(id, name, yearr);
+       
         list_UnderGraduate.add(us);
 
         System.out.println("succesfully added :)");

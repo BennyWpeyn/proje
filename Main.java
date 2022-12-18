@@ -29,8 +29,9 @@ public class Main{
         Supervisor spv = new Supervisor(150, "Azra Özbelgin");
         
         // örnek staff lar
-        Secretary sc = new Secretary(74,"Eda","secretary",8,5);
-        Cleaner cleanerer = new Cleaner(1000, "Osamn Sultan Mehmet", "CLeaner", 8, 3);
+        Cleaning cleanerer = new Cleaning(1000, "Osamn Sultan Mehmet", "CLeaner", 8, 3,1000);
+        Secretary sc = new Secretary(74,"Eda","secretary",8,5,4000);
+
 
         // örnek alanlar
         Classrooms sinif = new Classrooms(416, 56);
@@ -81,10 +82,13 @@ public class Main{
         spv.addLessontoStudent(ugs1, ugc4);
    
 
-    Technical tc=new Technical(1, "Ali", "ofis", 6, 10);
-     tc.insurance_premium(5000);
-
-
+    Technical tc=new Technical(1, "Ali", "ofis", 6, 7,6000);
+     tc.insurance_premium(tc.salary);
+     tc.net_salary(tc.salary,tc.year_of_experience);
+      
+Community c1=new Community("AI",500);
+CommunityManager cm=new CommunityManager(c1.nameOfCommunity, c1.population);
+cm.addCommunitytoStudent(ugs1, c1);
 
         sc.setCleaner(sinif,cleanerer);
         System.out.println(sinif.cleaner.getname());

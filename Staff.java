@@ -6,16 +6,17 @@ public abstract class Staff {
     private int working_hours;
 
     protected int year_of_experience; //it is "protected" because we wanted to use this variable in Technical class
-    private int salary;
+    protected int salary;
 
 
 
-public Staff(int id_number,String name_surname,String task_info,int working_hours,int year_of_experience){
+public Staff(int id_number,String name_surname,String task_info,int working_hours,int year_of_experience,int salary){
 this.id_number=id_number;
 this.name_surname=name_surname;
 this.task_info=task_info;
 this.working_hours=working_hours;
 this.year_of_experience=year_of_experience;
+this.salary=salary;
 }
 //used get-set methods because variables are defined as "private"
 public void setid(int id){ this.id_number=id;}
@@ -32,6 +33,8 @@ public int getwork(){return working_hours;}
 
 public void setyear(int w_year){ this.year_of_experience=w_year;}
 public int getyear(){return year_of_experience;}
+public void setsalary(int salary){ this.year_of_experience=salary;}
+public int getsalary(){return year_of_experience;}
 
 
 
@@ -45,6 +48,7 @@ System.out.println("Your total salary:"+salary);
 
 }
 
+public abstract void net_salary(int salary,int year_of_experience);
 
 
 }
