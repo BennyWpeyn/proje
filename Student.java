@@ -10,12 +10,14 @@ public abstract class Student {
     
     ArrayList<Course> listOfCourses;
     int numCourses;
+    ArrayList<Community> listOfCommunity;
 
     public Student(int id_number, String name, int year) {
         this.id_number = id_number;
         this.name = name;
         this.year = year;
         listOfCourses = new ArrayList<>();
+        listOfCommunity=new ArrayList<>();
     }
 
 
