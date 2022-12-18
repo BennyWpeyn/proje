@@ -30,7 +30,7 @@ public class Main{
         
         // örnek staff lar
         Secretary sc = new Secretary(74,"Eda","secretary",8,5);
-
+        Cleaner cleanerer = new Cleaner(1000, "Osamn Sultan Mehmet", "CLeaner", 8, 3);
 
         // örnek alanlar
         Classrooms sinif = new Classrooms(416, 56);
@@ -86,7 +86,8 @@ public class Main{
 
 
 
-
+        sc.setCleaner(sinif,cleanerer);
+        System.out.println(sinif.cleaner.getname());
 
 
 
