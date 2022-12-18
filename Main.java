@@ -81,8 +81,7 @@ public class Main{
         spv.addLessontoStudent(ugs1, ugc4);
    
 
-    Technical tc=new Technical(1, "Ali", "ofis", 6, 10);
-     tc.insurance_premium(5000);
+
         
      System.out.println();
      System.out.println();
