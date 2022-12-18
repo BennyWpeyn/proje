@@ -32,7 +32,7 @@ public class Secretary extends Staff implements CourseOperations{
 
     }
 
-    public void setCleaner(Areas area , Cleaner cleaner ){
+    public void setCleaner(Areas area , Cleaning cleaner ){
 //this sets the cleaner of the area
         area.cleaner=cleaner;
 

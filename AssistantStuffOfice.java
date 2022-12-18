@@ -1,8 +1,7 @@
 public class AssistantStuffOfice extends Areas{
     int id_number;
     String name_surname;
-    Cleaner[] lisfOfCleaning;
-    int numCleaning;
+    Cleaning Cleaning;
     int assistant_area=50;
 
     public AssistantStuffOfice(int id_number, String name_surname ){

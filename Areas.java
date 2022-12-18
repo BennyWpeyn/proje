@@ -1,6 +1,6 @@
 public abstract class Areas {
     int max_population;
-    Cleaner cleaner;
+    Cleaning cleaner;
 
 
     public abstract void Countnaturalgas();
