@@ -10,15 +10,8 @@ public class Supervisor extends Lecturer {
         super(id_number, name_surname);
     }
 
-
-
-
-
-
-
-
-    // adding courses to the student
-    public void addLessontoStudent(Student student, Course course){
+     // adding courses to the student
+     public void addLessontoStudent(Student student, Course course){
         
         if(course.courseLocation == null){
             System.out.println("This course has not a spesific classroom yet.");
@@ -38,12 +31,8 @@ public class Supervisor extends Lecturer {
     }
 
 
-
-
-
-
-    List<Student> list_UnderGraduate = new ArrayList<>();
-    List<Student> list_Graduate = new ArrayList<>();
+List<Student> list_UnderGraduate = new ArrayList<>();
+List<Student> list_Graduate = new ArrayList<>();
 
     public void addUnderStudent(){
         System.out.print("id:");
@@ -53,10 +42,8 @@ public class Supervisor extends Lecturer {
         System.out.print("year:");
         int yearr=sc.nextInt();
     
-        UndergraduateS us=new UndergraduateS(id, name,yearr );
-        GraduateS gs=new GraduateS(id, name, yearr);
+        UndergraduateS us=new UndergraduateS(id, name,yearr );  
         list_UnderGraduate.add(us);
-        list_Graduate.add(gs);
 
         System.out.println("succesfully added :)");
     }
@@ -75,9 +62,7 @@ public class Supervisor extends Lecturer {
         System.out.println("succesfully added :)");
     }
 
-
-
-
+ 
 
 
 

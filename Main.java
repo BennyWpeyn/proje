@@ -1,4 +1,4 @@
-import java.util.Scanner;
+
 
 public class Main{
 
@@ -23,7 +23,7 @@ public class Main{
         
         
         // örnek staff lar
-        Secretary sc = new Secretary();
+        Secretary sc = new Secretary(74,"Eda","secretary",8,5);
 
 
         // örnek alanlar
@@ -31,8 +31,7 @@ public class Main{
 
 
         //örnek kodlar
-        try (Scanner sc2 = new Scanner(System.in)) {
-        }
+        
 
 
         sc.setLecturer(ugc2, lc);
@@ -53,11 +52,13 @@ public class Main{
         System.out.println("Studendts id numbers : " +ugc.students_id);
        
 
-Supervisor sv=new Supervisor(125,"Nilsu Aksu");
+    Supervisor sv=new Supervisor(125,"Nilsu Aksu");
 
     sv.addUnderStudent();
     sv.addGraduateStudent();
 
+    Technical tc=new Technical(1, "Ali", "ofis", 6, 10);
+     tc.insurance_premium(5000);
 
 
 
