@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public abstract class Student {
     
     // its abstract because we have 2 types of creatable object (undergradueate and gradeted)
@@ -6,14 +8,14 @@ public abstract class Student {
     final String name;
     final int year;
     
-    Course[] listOfCourses;
+    ArrayList<Course> listOfCourses;
     int numCourses;
 
     public Student(int id_number, String name, int year) {
         this.id_number = id_number;
         this.name = name;
         this.year = year;
-        listOfCourses = new Course[50];
+        listOfCourses = new ArrayList<>();
     }
 
 
