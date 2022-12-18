@@ -8,7 +8,11 @@ public abstract class Course {
     Classrooms courseLocation;  // classroom
     Lecturer lecturerOfCourse;
     ArrayList<Integer> students_id;
-    int numStudents; // number of the students 
+    int numStudents; // number of the students
+    
+
+    //grades part
+    Grades grade;
 
 
 

@@ -45,7 +45,7 @@ System.out.println("Your total salary:"+salary);
 
 }
 
-public abstract void net_salary();
+
 
 
 }

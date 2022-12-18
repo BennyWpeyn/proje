@@ -66,7 +66,6 @@ List<Student> list_Graduate = new ArrayList<>();
     
         UndergraduateS us=new UndergraduateS(id, name,yearr );
         // i did the masterStudent before it , it was graduateS
-        GraduateS gs=new MasterStudent(id, name, yearr);
         list_UnderGraduate.add(us);
 
         System.out.println("succesfully added :)");
