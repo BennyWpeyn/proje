@@ -29,6 +29,7 @@ public class Main{
         Supervisor spv = new Supervisor(150, "Azra Özbelgin");
         
         // örnek staff lar
+        Cleaning cleanerer = new Cleaning(1000, "Osamn Sultan Mehmet", "CLeaner", 8, 3,1000);
         Secretary sc = new Secretary(74,"Eda","secretary",8,5,4000);
 
 
@@ -82,6 +83,7 @@ public class Main{
    
 
 
+    
         
      System.out.println();
      System.out.println();
@@ -107,7 +109,8 @@ Community c1=new Community("AI",500);
 CommunityManager cm=new CommunityManager(c1.nameOfCommunity, c1.population);
 cm.addCommunitytoStudent(ugs1, c1);
 
-
+        sc.setCleaner(sinif,cleanerer);
+        System.out.println(sinif.cleaner.getname());
 
 
 
