@@ -82,6 +82,25 @@ public class Main{
         spv.addLessontoStudent(ugs1, ugc4);
    
 
+    Technical tc=new Technical(1, "Ali", "ofis", 6, 10);
+     tc.insurance_premium(5000);
+        
+     System.out.println();
+     System.out.println();
+     
+        System.out.println("this places");
+      
+        System.out.println(lc.lisfOfCourses[0].course_code);
+        System.out.println(lc.lisfOfCourses[1].course_code);
+        //
+        System.out.println();
+        System.out.println("lessons");
+        System.out.println(ugs1.listOfCourses);
+        System.out.println();
+        System.out.println();
+        lc.setGrades(ugc, ugs1, 80, 100);
+        ugs1.showGrades(ugc);
+        ugs1.showGrades(ugc2);
     Technical tc=new Technical(1, "Ali", "ofis", 6, 7,6000);
      tc.insurance_premium(tc.salary);
      tc.net_salary(tc.salary,tc.year_of_experience);

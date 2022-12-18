@@ -8,6 +8,7 @@ public class UndergraduateC extends Course {
         this.course_name = course_name;
         this.credit = credit;
         students_id = new ArrayList<>();
+        grade = new Grades();
     }
      
 

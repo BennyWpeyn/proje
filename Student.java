@@ -21,5 +21,26 @@ public abstract class Student {
     }
 
 
+    public void showGrades(){
 
-}
+
+
+    }
+    public void showGrades(Course course){
+        for(int i = 0; i < numCourses ; i++ ){
+            if(course.course_code == listOfCourses.get(i).course_code ){
+                if(listOfCourses.get(i).grade.gradeadded){
+                    System.out.println(course.course_code +" - "+course.course_name);
+                    listOfCourses.get(i).grade.showGrades();
+                }
+                else{
+                    System.out.println(course.course_code +" - "+course.course_name);
+                    System.out.println("Lecturer doesn't announced the grades yet !!!");
+                } 
+            }
+                
+            
+        }
+
+    }
+    }
