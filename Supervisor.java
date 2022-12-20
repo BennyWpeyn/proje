@@ -53,6 +53,7 @@ List<Student> list_UnderGraduate = new ArrayList<>();
 List<Student> list_Graduate = new ArrayList<>();
 
     public void addUnderStudent(){
+        try{
         System.out.print("id:");
         int id=sc.nextInt();
         System.out.print("name:");
@@ -66,6 +67,11 @@ List<Student> list_Graduate = new ArrayList<>();
         list_UnderGraduate.add(us);
 
         System.out.println("succesfully added :)");
+        }
+        catch(Exception e){
+            System.out.println("Wrong type of input...");
+
+        }
     }
     public void addMasterStudent(){
         System.out.print("id:");

@@ -20,17 +20,27 @@ public class Main{
         UndergraduateC ugc = new UndergraduateC("Ceng205", "BM giris", 4);
         System.out.println(ugc.course_code + " " + ugc.course_name + " "+ ugc.credit);
         UndergraduateC ugc2 = new UndergraduateC("Ceng206", "BM giris", 4);
-        GraduateC gc1 = new GraduateC("BM605", "Elektrik Devreleri", 6);
+        
         UndergraduateC ugc3 = new UndergraduateC("Ceng207", "BM giris", 4);
         UndergraduateC ugc4 = new UndergraduateC("Ceng208", "BM giris", 4);
+        UndergraduateC ugc5 = new UndergraduateC("Ceng208", "BM giris", 4);
+        UndergraduateC ugc6 = new UndergraduateC("Ceng208", "BM giris", 4);
+        UndergraduateC ugc7 = new UndergraduateC("Ceng208", "BM giris", 4);
+        UndergraduateC ugc8 = new UndergraduateC("Ceng208", "BM giris", 4);
+        UndergraduateC ugc9 = new UndergraduateC("Ceng208", "BM giris", 4);
+        UndergraduateC ugc10 = new UndergraduateC("Ceng208", "BM giris", 4);
+        UndergraduateC ugc11 = new UndergraduateC("Ceng208", "BM giris", 4);
+        UndergraduateC ugc12 = new UndergraduateC("Ceng208", "BM giris", 4);
+        UndergraduateC ugc13 = new UndergraduateC("Ceng208", "BM giris", 4);
 
+        GraduateC gc1 = new GraduateC("BM605", "Elektrik Devreleri", 6);
         // örnek öğretmenler
         Lecturer lc = new Lecturer(15, "Osman Gültekin");
         Supervisor spv = new Supervisor(150, "Azra Özbelgin");
         
         // örnek staff lar
         Cleaning cleanerer = new Cleaning(1000, "Osamn Sultan Mehmet", "CLeaner", 8, 3,1000);
-        Secretary sc = new Secretary(74,"Eda","secretary",8,5,4000);
+        Secretary sc = new Secretary(74,"Eda","secretary",8,10,4000);
 
 
         // örnek alanlar
@@ -112,8 +122,31 @@ cm.addCommunitytoStudent(ugs1, c1);
         sc.setCleaner(sinif,cleanerer);
         System.out.println(sinif.cleaner.getname());
 
+System.out.println("--------------------------------");
+sc.net_salary(sc.salary, sc.year_of_experience);
 
 
+Supervisor sv=new Supervisor(15, "ayse");
+//sv.addUnderStudent();
+
+
+Lecturer lc2=new Lecturer(78, "fatma");
+sc.setLecturer(ugc, lc2);
+sc.setLecturer(ugc2, lc2);
+sc.setLecturer(ugc3, lc2);
+sc.setLecturer(ugc4, lc2);
+sc.setLecturer(ugc5, lc2);
+sc.setLecturer(ugc6, lc2);
+sc.setLecturer(ugc7, lc2);
+sc.setLecturer(ugc9, lc2);
+sc.setLecturer(ugc8, lc2);
+sc.setLecturer(ugc10, lc2);
+sc.setLecturer(ugc11, lc2);
+sc.setLecturer(ugc12, lc2);
+sc.setLecturer(ugc13, lc2);
+
+
+//System.out.println(lc2.numCourses);
 
 
     }

@@ -10,7 +10,17 @@ public class Cleaning extends Staff {
 
     @Override
     public void net_salary(int salary, int year_of_experience) {
-    
+       
+        if(year_of_experience>=5 && year_of_experience<=10){
+            salary=salary+((salary*5)/100);
+         }
+         else if(year_of_experience>=11 && year_of_experience<=20){
+            salary=salary+((salary*10)/100);
+         }
+         else if(year_of_experience>=21 && year_of_experience<=30){
+            salary=salary+((salary*15)/100);
+         }
+         System.out.println("Your new salary after "+year_of_experience+" year of your experiences is : "+salary+"");
         
     }
 
