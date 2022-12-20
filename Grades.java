@@ -2,10 +2,9 @@ import java.util.InputMismatchException;
 
 
 public class Grades {
-    private float midterm;
-    private float finalexam;
-    private float average;
-    public boolean gradeadded = false;
+    private float midterm ;
+    private float finalexam ;
+    private float average = -1;
 
 
     public void calculateAverage(){
@@ -22,12 +21,19 @@ public class Grades {
     public float getFinalexam() {
         return finalexam;
     }
-
+    
+    
+    public float getAverage() {
+        return average;
+    }
+    
+    
     public void showGrades(){
         System.out.println("Midterm :\t"+ midterm + "\nFinal :\t"+ finalexam +"\n Average : \t" + average);
 
     }
 
+   
     private void setMidterm(float midterm) {
         this.midterm = midterm;
         calculateAverage();
@@ -39,6 +45,7 @@ public class Grades {
         calculateAverage();
     }
 
+    
     public void setGrades(float midterm, float finalexam ){
         try{
             if((0 > midterm && midterm > 100) && (0 > finalexam && finalexam > 100)){
@@ -48,7 +55,6 @@ public class Grades {
             
             setMidterm(midterm);
             setFinalexam(finalexam);
-            gradeadded = true;
         }
         catch(InputMismatchException e){
             System.out.println("Wrong input type. Pleane use numbers");
@@ -59,8 +65,10 @@ public class Grades {
 
     }
 
-    public float getAverage() {
-        return average;
+    private void calculateLetterGrade(){
+       
+        
+
     }
 
     
