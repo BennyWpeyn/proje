@@ -107,17 +107,28 @@ public class Main{
         System.out.println("lessons");
         System.out.println(ugs1.listOfCourses);
         System.out.println();
-        System.out.println();
+        System.out.println("---------------");
         lc.setGrades(ugc, ugs1, 80, 100);
         ugs1.showGrades(ugc);
         ugs1.showGrades(ugc2);
+        System.out.println("---------------");
+        System.out.println();
+        ugs1.showGrades();
+        System.out.println("----------------");
+        System.out.println();
+        ugs1.calculateGPA();
+        System.out.println(ugs1.GPA);
+        System.out.println("----------------");
+        System.out.println();
+
+
     Technical tc=new Technical(1, "Ali", "ofis", 6, 7,6000);
      tc.insurance_premium(tc.salary);
      tc.net_salary(tc.salary,tc.year_of_experience);
       
-Community c1=new Community("AI",500);
-CommunityManager cm=new CommunityManager(c1.nameOfCommunity, c1.population);
-cm.addCommunitytoStudent(ugs1, c1);
+    Community c1=new Community("AI",500);
+    CommunityManager cm=new CommunityManager(c1.nameOfCommunity, c1.population);
+    cm.addCommunitytoStudent(ugs1, c1);
 
         sc.setCleaner(sinif,cleanerer);
         System.out.println(sinif.cleaner.getname());
