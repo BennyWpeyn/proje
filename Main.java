@@ -142,22 +142,27 @@ Supervisor sv=new Supervisor(15, "ayse");
 
 
 Lecturer lc2=new Lecturer(78, "fatma");
+Lecturer lc3=new Lecturer(40, "ahmet");
 sc.setLecturer(ugc, lc2);
-sc.setLecturer(ugc2, lc2);
+
 sc.setLecturer(ugc3, lc2);
 sc.setLecturer(ugc4, lc2);
 sc.setLecturer(ugc5, lc2);
 sc.setLecturer(ugc6, lc2);
 sc.setLecturer(ugc7, lc2);
-sc.setLecturer(ugc9, lc2);
-sc.setLecturer(ugc8, lc2);
-sc.setLecturer(ugc10, lc2);
-sc.setLecturer(ugc11, lc2);
-sc.setLecturer(ugc12, lc2);
-sc.setLecturer(ugc13, lc2);
+
+sc.setLecturer(ugc2, lc2);
+
+
 
 
 //System.out.println(lc2.numCourses);
+
+
+sc.showLecturer(ugc2);
+
+sc.setCleaner(sinif, cleanerer);
+
 
 
     }

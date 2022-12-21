@@ -28,7 +28,8 @@ boolean control=true ;
     }
 
     public void showLecturer(Course course){
-        System.out.println(course.lecturerOfCourse.name_surname + " "+ course.lecturerOfCourse.id_number);
+        System.out.println("-Course name: "+course.course_name);
+        System.out.println("--Lecturer ID: "+course.lecturerOfCourse.id_number+ "\n--Lecturer Name: "+ course.lecturerOfCourse.name_surname );
 
     }
 
