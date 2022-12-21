@@ -137,8 +137,8 @@ Supervisor sv=new Supervisor(15, "ayse");
 //sv.addUnderStudent();
 
 
-Lecturer lc2=new Lecturer(78, "fatma");
-Lecturer lc3=new Lecturer(40, "ahmet");
+
+
 sc.setLecturer(ugc, lc2);
 
 sc.setLecturer(ugc3, lc2);
