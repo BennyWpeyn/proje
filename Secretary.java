@@ -1,4 +1,4 @@
-public class Secretary extends Staff implements CourseOperations{
+public class Secretary extends Staff {
 
  
     
