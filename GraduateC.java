@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 
 public class GraduateC extends Course {
-    Classrooms classroom;
-
 
     public GraduateC(String course_code, String course_name, int credit) {
         this.course_code = course_code;

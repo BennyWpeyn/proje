@@ -11,6 +11,21 @@ public class Community {
         this.population = population;
         students_List=new ArrayList<>();
     }
+
+    public String getNameOfCommunity() {
+        return nameOfCommunity;
+    }
+
+    public void setNameOfCommunity(String nameOfCommunity) {
+        this.nameOfCommunity = nameOfCommunity;
+    }
+
+    public int getPopulation() {
+        return population;
+    }
+
+
+
     
  
     

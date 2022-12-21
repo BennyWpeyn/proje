@@ -22,8 +22,8 @@ public class Lecturer {
                     if(course.course_code == student.listOfCourses.get(i).course_code){
                         // it works when the students have this course
                         student.listOfCourses.get(i).grade.setGrades(midterm, finalexam);
-                        System.out.println("Grades are added");
-                        return;
+                        System.out.println("Grades added");
+                        student.calculateGPA();
                     }
                     else{
                         System.out.println("This student doesn't have this course!!!");
@@ -35,7 +35,7 @@ public class Lecturer {
             }
         }
 
-        student.calculateGPA();
+        
     }
 
 

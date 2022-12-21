@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 
-import javax.lang.model.util.ElementScanner14;
 
 public abstract class Student {
 
@@ -62,7 +61,8 @@ public abstract class Student {
         for (int i = 0; i < numCourses; i++) {
             Double score;
             if (listOfCourses.get(i).grade.getAverage() != -1) {
-                if (listOfCourses.get(i).grade.getAverage() <= 100 && listOfCourses.get(i).grade.getAverage() >= 90) {
+                if (listOfCourses.get(i).grade.getAverage() <= 100 
+                && listOfCourses.get(i).grade.getAverage() >= 90) {
                     score = 4.00;
                 } else if (listOfCourses.get(i).grade.getAverage() <= 89
                         && listOfCourses.get(i).grade.getAverage() >= 85) {
